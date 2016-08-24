@@ -34,7 +34,7 @@ Thread.start {
   sleep 10000
 
   // Secret Text for Gitlab
-  println "--> Registering Gitlab credentials."
+  println "--> Registering Gitlab root user token.."
   def system_credentials_provider = SystemCredentialsProvider.getInstance()
 
   def credential_description = "ADOP Gitlab root token"
@@ -60,7 +60,7 @@ Thread.start {
   }
 
   // Delete the secret file for security
-  // secretfile.delete()
+  secretfile.delete()
 
   // Save the state
   instance.save()
