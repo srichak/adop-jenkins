@@ -60,7 +60,7 @@ Thread.start {
   }
 
   // Delete the secret file for security
-  secretfile.delete()
+  // secretfile.delete()
 
   // Save the state
   instance.save()
