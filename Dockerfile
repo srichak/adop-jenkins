@@ -1,4 +1,4 @@
-FROM jenkins:2.7.2
+FROM jenkins:2.46.2
 
 MAINTAINER Bryan Sazon and Arcy Teodoro 
 
